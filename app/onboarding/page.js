@@ -1,5 +1,5 @@
 'use client';
-
+import Navbar from "@/components/navbar";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -84,6 +84,7 @@ export default function OnboardingPage() {
 
     return (
         <div className="min-h-screen bg-gray-100 dark:bg-gray-900 flex items-center justify-center px-6 py-10">
+            <Navbar />
             <div className="w-full max-w-3xl">
                 {currentStep >= 0 && (
                     <div className="mb-6">
