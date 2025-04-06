@@ -1,5 +1,5 @@
 'use client';
-
+import Navbar from "@/components/navbar";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Head from "next/head";
@@ -58,6 +58,7 @@ export default function SignInPage() {
       </Head>
 
       <main className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-100 via-white to-amber-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-800 px-4 relative">
+      <Navbar />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
